@@ -1,0 +1,205 @@
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ html, body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ }
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: url('./../assets/imgs/fundo.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+}
+
+main {
+    min-height: calc(100vh - 25px);
+}
+
+@media only screen and (max-width: 360px) {
+   article {
+      min-height: calc(100vh - 180px);
+  }
+}
+
+@media only screen and (max-width: 412px) {
+   article .sectionTop {
+      padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width: 417px) {
+   main {
+      min-height: calc(100vh - 80px);
+   }
+   .footerHome {
+      margin-top: 20px !important;
+   }
+}
+
+ 
+.footerHome {
+   margin-top: 23px;
+}
+
+footer {
+    align-self: end;
+    grid-column: 2;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8cd2db;
+}
+
+a:active {
+    color: #8cd2db;
+}
+
+
+/* PAGES */
+
+.sectionTop {
+    text-align: center;
+}
+
+.sectionTop span {
+    padding: 12px;
+    font-size: 50px;
+}
+
+.linkTop {
+    font-size: 30px;
+}
+
+.formControl {
+   padding: 4px;
+   border-radius: 6px;
+   font-size: 16px;
+}
+
+.formGroup {
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 10px;
+ }
+
+ .formGroup label {
+    display: block;
+    font-size: 22px;
+    padding: 5px;
+ }
+ 
+ .result {
+    font-size: 70px;
+    border: 2px solid #979797;
+    border-radius: 10px;
+    background: #fff;
+    padding: 10px;
+    padding-top: 15px;
+    text-align: center;
+    word-break: break-word;
+ }
+
+ .inputCamp {
+    border-radius: 8px;
+    border: 2px solid #979797;
+    padding: 10px;
+    font-size: 20px;
+    width: 100%;
+ }
+
+ .link-button {
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+   display: inline;
+   margin: 0;
+   padding: 0;
+   color: #3f51b5;
+   font-weight: 900;
+ }
+
+ .link-button:hover {
+   text-decoration: underline;
+ }
+
+ .option-letter {
+   display: flex;
+   justify-content: center;
+ }
+
+ .option-letter span {
+    display: block;
+    background: #fff;
+    border-radius: 10px;
+    padding: 5px;
+ }
+
+ .option-letter .fontSizeA {
+   font-size: 48px;
+   margin-top: 20px;
+   padding-top: 8px;
+ }
+
+ .option-letter .fontBack {
+   background: #66e5f5;
+   color: #3f51b5;
+   cursor: default;
+ }
+
+ .option-letter .fontSizeB {
+    font-size: 35px;
+    padding: 10px;
+    margin-left: 10px;
+ }
+
+.iconClose svg {
+   float: right;
+   border: 1px solid #ccc;
+   border-radius: 50%;
+   padding: 3px;
+   font-size: 25px;
+   color: #fff;
+   background-color: #888;
+ }
+
+.react-modal-sheet-backdrop {
+   background-color: #ebe9e9;
+   color: #000;
+   padding: 10px;
+ }
+ .react-modal-sheet-container {
+   background-color: #ebe9e9 !important;
+   color: #000;
+   padding: 10px;
+   overflow: auto;
+ }
+ .react-modal-sheet-header {
+   background-color: #ebe9e9;
+   color: #000;
+   padding: 10px;
+ }
+ 
+ .react-modal-sheet-drag-indicator {
+   background-color: #ebe9e9;
+   color: #000;
+   padding: 10px;
+ }
+ 
+ .react-modal-sheet-content {
+   background-color: #ebe9e9;
+   color: #000;
+   padding: 10px;
+   touch-action: manipulation !important;
+ }
