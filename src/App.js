@@ -2,14 +2,14 @@ import React, { Fragment } from 'react';
 import RouteApp from './routes/routes';
 
 import './global/styles.css';
-import Header from './components/Header';
 import Footer from './components/Footer';
+import ShowHeader from './shared/locations/ShowHeader';
 
 function App() {
   return (
     <Fragment>
       <main>    
-        <Header /> 
+        <ShowHeader /> 
         <article>
           <RouteApp />
         </article>

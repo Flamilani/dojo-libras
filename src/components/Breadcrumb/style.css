@@ -6,3 +6,8 @@ a {
 a:hover {
     color: #0993a5;
 }
+
+.logoPeq {
+    width: 180px;
+    float: right;
+}

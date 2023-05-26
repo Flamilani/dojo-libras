@@ -42,12 +42,10 @@ export default class Quiz extends Component {
 
         let scoreResult;
         if (((score / Object.keys(questions).length) * 100) === 100) {
-            scoreResult = "Parabéns, acertou tudo!";
-            console.log(parseFloat((score / Object.keys(questions).length) * 100).toFixed(0));
+            scoreResult = "Parabéns, acertou tudo!";          
         } else {
-            scoreResult = "Tem que estudar mais";
-            console.log(parseFloat((score / Object.keys(questions).length) * 100).toFixed(0));
-        }
+            scoreResult = "Tem que praticar mais na próxima vez.";       
+        } 
         return (
             <aside className="quiz">
                 <Breadcrumb title="Quiz" styles="sectionTop" link="/"></Breadcrumb>
@@ -74,9 +72,9 @@ export default class Quiz extends Component {
                                 onClick={() => this.nextStep(step)}>Próximo</button>
                         </>) : (
                             <div className="finalPage">
-                                <h1 className="titleFinal">Terminou a Quiz!</h1>
-                                <p className="scoreFinal">Seus pontos são: {parseFloat((score / Object.keys(questions).length) * 100).toFixed(0)}</p>
-                                <p className="scorePhase">{scoreResult}</p>
+                                <h1 className="titleFinal">{scoreResult}</h1>
+                                <p className="scoreFinal">Sua pontuação: {parseFloat((score / Object.keys(questions).length) * 100).toFixed(0)}</p>
+                                <br />
                                 <Link className="btnPlayAgain" to="/">
                                     Jogar novamente
                                 </Link>

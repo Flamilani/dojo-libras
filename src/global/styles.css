@@ -70,12 +70,13 @@ a:active {
 /* PAGES */
 
 .sectionTop {
-    text-align: center;
+   padding-top: 22px;
+   text-align: left;
 }
 
 .sectionTop span {
     padding: 12px;
-    font-size: 50px;
+    font-size: 40px;
 }
 
 .linkTop {

@@ -1,6 +1,6 @@
 import React from 'react';
-// import { FaSignLanguage } from 'react-icons/fa';
-/* import ReactTooltip from 'react-tooltip'; */
+import certo from '../../assets/gifs/resposta_certa.gif';
+import errado from '../../assets/gifs/resposta_errada.gif';
 
 import './style.css';
 
@@ -28,11 +28,16 @@ const Answer = (props) => {
                 </ul>
                 <div>
                     {
-                        props.correctAnswer ? <div className="correctAnswer">Resposta correta 
-                      {/*   <ReactTooltip html={true} id="dia" place="right" effect="solid" /> */}
-{/*                         <FaSignLanguage data-tip="<img className='imageSize' src='https://umuarama.ifpr.edu.br/wp-content/uploads/2021/03/ellen-mascote.gif' />" data-for="dia" /> */}
+                        props.correctAnswer ? <div className="correctAnswer">
+                            <img className='imageSize' src={certo} alt="Resposta Certa" /> 
+                            <span>Parabéns, você acertou!</span>
+                           
                         </div> : 
-                        props.clickedAnswer ? <div className="incorrectAnswer">Resposta incorreta {/* <FaSignLanguage /> */}</div> : ''
+                        props.clickedAnswer ? <div className="incorrectAnswer">
+                             <img className='imageSize' src={errado} alt="Resposta Errada" /> 
+                            <br />
+                            <span>Ops, errou!</span>                  
+                        </div> : ''
                     }
                 </div>
             </>
