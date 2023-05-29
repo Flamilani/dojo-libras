@@ -31,11 +31,14 @@
 }
 
 .formGroup.quizCard {
-    padding: 40px;
+    padding: 20px;
+    padding-bottom: 30px;
     text-align: center;
     border-radius: 10px;
-    max-width: 350px;
+    max-width: 650px;
     width: auto;
+    background: #fba24f;
+    border: 2px solid red;
 }
 
 /*  QUESTION  */
@@ -52,7 +55,6 @@
     text-transform: none;
     text-shadow: none;
     text-align: left;
-    display: inline-block;
 }
 
 .Content {
@@ -66,7 +68,7 @@
 }
 
 aside.quiz {
-    max-width: 880px;
+    max-width: 650px;
     width: 100%;
     margin: 0 auto;
 }
@@ -148,7 +150,12 @@ aside.quiz {
 }
 
 .imageSize {
-    width: 330px;
+    width: 450px;
+}
+
+.imageStart {
+    width: 100%;
+    margin-bottom: 26px;
 }
 
 .correctAnswer svg {
@@ -226,7 +233,7 @@ aside.quiz {
     width: 256px;
     margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 45px;
+    margin-bottom: 25px;
     padding: 10px;
     border: 2px solid red;
     border-radius: 10px;

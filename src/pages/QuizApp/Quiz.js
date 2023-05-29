@@ -2,9 +2,12 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Question from './Question';
 import Answer from './Answer';
-import { StateQuestions } from '../../shared/constants/state-questions.constant';
-import './style.css';
 import { Breadcrumb } from '../../components/Breadcrumb';
+import { StateQuestions } from '../../shared/constants/state-questions.constant';
+import aprovado from '../../assets/gifs/aprovado.gif';
+import baixo_resultado from '../../assets/gifs/baixo_resultado.gif';
+
+import './style.css';
 
 export default class Quiz extends Component {
 
@@ -42,9 +45,9 @@ export default class Quiz extends Component {
 
         let scoreResult;
         if (((score / Object.keys(questions).length) * 100) === 100) {
-            scoreResult = "Parabéns, acertou tudo!";          
+            scoreResult = <div><img className='imageStart' src={aprovado} alt="Aprovado" /><p>Parabéns, acertou tudo!</p></div>;          
         } else {
-            scoreResult = "Tem que praticar mais na próxima vez.";       
+            scoreResult = <div><img className='imageStart' src={baixo_resultado} alt="Baixo Resultado" /><p>Não se anima, tenta praticar mais na próxima vez.</p></div>;       
         } 
         return (
             <aside className="quiz">
